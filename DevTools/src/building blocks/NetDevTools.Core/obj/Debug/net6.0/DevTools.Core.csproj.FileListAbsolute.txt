@@ -1,0 +1,12 @@
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\DevTools.Core.csproj.AssemblyReference.cache
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\DevTools.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\DevTools.Core.AssemblyInfoInputs.cache
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\DevTools.Core.AssemblyInfo.cs
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\DevTools.Core.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\bin\Debug\net6.0\DevTools.Core.deps.json
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\bin\Debug\net6.0\DevTools.Core.dll
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\bin\Debug\net6.0\DevTools.Core.pdb
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\DevTools.Core.dll
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\refint\DevTools.Core.dll
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\DevTools.Core.pdb
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\DevTools.Core\obj\Debug\net6.0\ref\DevTools.Core.dll
