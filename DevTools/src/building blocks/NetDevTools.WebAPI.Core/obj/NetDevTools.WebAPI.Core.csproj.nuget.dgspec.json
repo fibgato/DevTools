@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\NetDevTools.Core.csproj": {}
+    "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.WebAPI.Core\\NetDevTools.WebAPI.Core.csproj": {}
   },
   "projects": {
-    "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\NetDevTools.Core.csproj": {
-      "version": "6.0.3",
+    "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.WebAPI.Core\\NetDevTools.WebAPI.Core.csproj": {
+      "version": "6.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\NetDevTools.Core.csproj",
-        "projectName": "NetDevTools.Core",
-        "projectPath": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\NetDevTools.Core.csproj",
+        "projectUniqueName": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.WebAPI.Core\\NetDevTools.WebAPI.Core.csproj",
+        "projectName": "NetDevTools.WebAPI.Core",
+        "projectPath": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.WebAPI.Core\\NetDevTools.WebAPI.Core.csproj",
         "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\obj\\",
+        "outputPath": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.WebAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,17 +43,21 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "FluentValidation": {
+            "NetDevPack.Security.JwtExtensions": {
               "target": "Package",
-              "version": "[10.4.0, )"
+              "version": "[6.0.2, )"
             },
-            "MediatR": {
+            "NetDevTools.Core": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[6.0.3, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Polly": {
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[7.2.3, )"
+            },
+            "Polly.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

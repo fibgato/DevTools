@@ -1,0 +1,12 @@
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\bin\Debug\net6.0\NetDevTools.WebAPI.Core.deps.json
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\bin\Debug\net6.0\NetDevTools.WebAPI.Core.dll
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\bin\Debug\net6.0\NetDevTools.WebAPI.Core.pdb
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\NetDevTools.WebAPI.Core.csproj.AssemblyReference.cache
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\NetDevTools.WebAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\NetDevTools.WebAPI.Core.AssemblyInfoInputs.cache
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\NetDevTools.WebAPI.Core.AssemblyInfo.cs
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\NetDevTools.WebAPI.Core.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\NetDevTools.WebAPI.Core.dll
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\refint\NetDevTools.WebAPI.Core.dll
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\NetDevTools.WebAPI.Core.pdb
+C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\obj\Debug\net6.0\ref\NetDevTools.WebAPI.Core.dll

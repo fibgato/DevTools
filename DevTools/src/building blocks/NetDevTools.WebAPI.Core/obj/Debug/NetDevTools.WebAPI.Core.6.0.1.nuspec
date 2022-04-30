@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NetDevTools.WebAPI.Core</id>
+    <version>6.0.1</version>
+    <authors>Filipe Gato</authors>
+    <description>Pacote de utilidades para WebAPI .NET</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="NetDevPack.Security.JwtExtensions" version="6.0.2" exclude="Build,Analyzers" />
+        <dependency id="NetDevTools.Core" version="6.0.3" exclude="Build,Analyzers" />
+        <dependency id="Polly" version="7.2.3" exclude="Build,Analyzers" />
+        <dependency id="Polly.Extensions.Http" version="3.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.WebAPI.Core\bin\Debug\net6.0\NetDevTools.WebAPI.Core.dll" target="lib\net6.0\NetDevTools.WebAPI.Core.dll" />
+  </files>
+</package>
