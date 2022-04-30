@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.WebAPI.Core\\NetDevTools.WebAPI.Core.csproj": {
-      "version": "6.0.1",
+      "version": "6.0.2",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.WebAPI.Core\\NetDevTools.WebAPI.Core.csproj",
         "projectName": "NetDevTools.WebAPI.Core",
