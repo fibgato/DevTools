@@ -73,7 +73,6 @@ namespace NetDevTools.WebAPI.Core.Services
                 case 500:
                     await TratarErro(response);
                     throw new CustomBadRequestException(ValidarProcessamento() ? "Erro ao processar sua requisição" : ValidationResult.Errors.Mensagens.First());
-
             }
 
             response.EnsureSuccessStatusCode();

@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>NetDevTools.WebAPI.Core</PackageId>
-    <Version>6.0.2</Version>
+    <Version>6.0.3</Version>
     <Authors>Filipe Gato</Authors>
     <Company>Infotech Tecnologia</Company>
     <Product>NetDevTools</Product>

@@ -59,7 +59,7 @@ namespace NetDevTools.WebAPI.Core.CustomResponses
                         retError.Status = (int)HttpStatusCode.BadRequest;
                         break;
                     case CustomNotFoundException _:
-                        httpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                        httpContext.Response.StatusCode = (int)HttpStatusCode.NotFound;
                         retError.Status = (int)HttpStatusCode.BadRequest;
                         break;
                     case CustomAuthorizeException _:
