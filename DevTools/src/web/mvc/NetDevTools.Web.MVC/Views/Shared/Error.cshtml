@@ -1,0 +1,28 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = @Model.Titulo;
+}
+
+<div class="container">
+    <div style="padding-top: 200px; text-align: center">
+        @{
+            if (Model == null)
+            {
+                <h2>Ocorreu um erro, mas não se preocupe. Nosso time será avisado e iremos corrigir em breve!</h2>
+            }
+            else
+            {
+                if (Model.ErroCode == 500)
+                {
+                    <i class="fa fa-times fa-5x mb-4" style="color:red;"></i>
+                }
+                else
+                {
+                    <i class="fa fa-exclamation-circle fa-5x mb-4" style="color: #abaca6;"></i>
+                }
+
+                <h2>@Html.Raw(Model.Mensagem)</h2>
+            }
+        }
+    </div>
+</div>

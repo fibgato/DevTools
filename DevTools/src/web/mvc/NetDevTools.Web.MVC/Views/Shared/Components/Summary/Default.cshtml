@@ -1,0 +1,43 @@
+﻿@if (ViewData.ModelState.ErrorCount > 0)
+{
+    <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <h6 id="msgRetorno"><strong>Atenção!</strong> Algo deu errado :(</h6>
+        <div asp-validation-summary="All" class="text-danger"></div>
+    </div>
+}
+
+@if (TempData["Erros"] is IEnumerable<string> mensagensErro && mensagensErro.Any())
+{
+    <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <h6 id="msgRetorno"><strong>Atenção!</strong> Algo deu errado :(</h6>
+
+        <ul>
+            @{
+                foreach (var erro in mensagensErro)
+                {
+                    <li>@erro</li>
+                }
+            }
+        </ul>
+    </div>
+}
+
+@if (TempData["Erro"] != null)
+{
+    <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <h6 class="font-weight-normal"><strong>Atenção!</strong> @TempData["Erro"].ToString() :(</h6>
+    </div>
+}
+
+@if (TempData["Sucesso"] != null)
+{
+    <input type="hidden" id="success" value="Oba! @TempData["Sucesso"] :)" />
+}
+
+@if (TempData["Error"] != null)
+{
+    <input type="hidden" id="error" value="Ops! @TempData["Error"] :)" />
+}

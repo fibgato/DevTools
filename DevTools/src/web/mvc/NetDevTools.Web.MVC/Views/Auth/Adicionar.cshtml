@@ -1,0 +1,55 @@
+﻿@model NetDevTools.Web.MVC.Models.Usuarios.UsuarioNovo
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_LayoutUnauthorize";
+}
+
+<div class="row">
+    <div class="col-lg-6" style="margin-top: 120px;">
+        <h3 class="font-weight-bold">Infotech - Acesso do cliente</h3>
+
+        <h1 class="font-weight-bold mt-5" style="font-size:60px;">Crie seu login nos passos ao lado</h1>
+    </div>
+
+    <div class="col-lg-6" style="margin-top: 120px;">
+
+        <vc:summary></vc:summary>
+
+        <form asp-action="Adicionar" style="margin: 40px;">
+
+            <div class="form-floating mb-2">
+                <input asp-for="Saudacao" type="text" class="form-control form-control-user h-4" placeholder="Digite como quer ser chamado" autocomplete="off">
+                <label asp-for="Saudacao">Saudação</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input asp-for="Email" type="email" class="form-control form-control-user h-4" placeholder="Digite seu email" autocomplete="off">
+                <label asp-for="Email">Email</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input asp-for="Senha" type="password" class="form-control form-control-user h-4" placeholder="Digite sua senha" autocomplete="off">
+                <label asp-for="Senha">Senha</label>
+            </div>
+
+            <div class="form-floating mb-2">
+                <input asp-for="ConfirmarSenha" type="password" class="form-control form-control-user h-4" placeholder="Confirme sua senha" autocomplete="off">
+                <label asp-for="ConfirmarSenha">Confirmar senha</label>
+            </div>
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">
+                    Entrar
+                </button>
+            </div>
+        </form>
+
+        <div class="card-footer text-center">Já tem uma conta?<a asp-controller="Auth" asp-action="Login"> Realize o login</a></div>
+
+    </div>
+</div>
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial" />
+}
