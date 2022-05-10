@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NetDevTools.Core</id>
+    <version>6.0.6</version>
+    <authors>Filipe Gato</authors>
+    <description>Pacote de utilidades para .NET</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="FluentValidation" version="10.4.0" exclude="Build,Analyzers" />
+        <dependency id="MediatR" version="10.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="6.0.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Desenvolvimento\GitHub\DevTools\DevTools\src\building blocks\NetDevTools.Core\bin\Debug\net6.0\NetDevTools.Core.dll" target="lib\net6.0\NetDevTools.Core.dll" />
+  </files>
+</package>

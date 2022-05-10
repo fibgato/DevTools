@@ -14,11 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Infotech Tecnologia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Pacote de utilidades para .NET")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("6.0.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("6.0.5")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("6.0.6.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("6.0.6")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetDevTools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetDevTools.Core")]
-[assembly: System.Reflection.AssemblyVersionAttribute("6.0.5.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("6.0.6.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 
