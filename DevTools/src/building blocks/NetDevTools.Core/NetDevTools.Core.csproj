@@ -9,7 +9,7 @@
     <Authors>Filipe Gato </Authors>
     <Product>NetDevTools</Product>
     <Description>Pacote de utilidades para .NET</Description>
-    <Version>6.0.10</Version>
+    <Version>6.0.11</Version>
     <PackageId>NetDevTools.Core</PackageId>
   </PropertyGroup>
 
