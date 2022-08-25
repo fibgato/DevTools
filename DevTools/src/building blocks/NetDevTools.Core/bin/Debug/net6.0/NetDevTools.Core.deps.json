@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "NetDevTools.Core/6.0.9": {
+      "NetDevTools.Core/6.0.10": {
         "dependencies": {
           "FluentValidation": "10.4.0",
           "MediatR": "10.0.1",
@@ -175,7 +175,7 @@
     }
   },
   "libraries": {
-    "NetDevTools.Core/6.0.9": {
+    "NetDevTools.Core/6.0.10": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

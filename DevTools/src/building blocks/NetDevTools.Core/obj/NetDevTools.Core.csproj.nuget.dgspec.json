@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\NetDevTools.Core.csproj": {
-      "version": "6.0.9",
+      "version": "6.0.10",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\NetDevTools.Core.csproj",
         "projectName": "NetDevTools.Core",
@@ -62,7 +62,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
