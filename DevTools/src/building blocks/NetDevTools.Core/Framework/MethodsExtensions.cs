@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -43,7 +45,6 @@ namespace NetDevTools.Core.Framework
             }
             return novoValor;
         }
-
         public static bool DevNetToolsSomenteNumeros(this string texto)
         {
             try
@@ -62,7 +63,6 @@ namespace NetDevTools.Core.Framework
                 throw new Exception("Falha ao verificar se o texto: " + texto + " contém somente números.", ex);
             }
         }
-
         public static string DevNetToolsRemoveAcentos(this string text)
         {
             var sbReturn = new StringBuilder();
@@ -75,7 +75,6 @@ namespace NetDevTools.Core.Framework
             }
             return sbReturn.ToString();
         }
-
         public static string DevNetToolsRemoveCaracteresEspeciais(this string text)
         {
             if (string.IsNullOrEmpty(text)) return string.Empty;
@@ -84,14 +83,12 @@ namespace NetDevTools.Core.Framework
             var rgx = new Regex(pattern);
             return rgx.Replace(text, string.Empty);
         }
-
         public static string DevNetToolsRemoveEspacos(this string text)
         {
             if (string.IsNullOrEmpty(text)) return string.Empty;
 
             return text.TrimEnd().TrimStart();
         }
-
         public static Nullable<T> DevNetToolsToNullable<T>(this string s) where T : struct
         {
             Nullable<T> result = new Nullable<T>();
@@ -106,7 +103,6 @@ namespace NetDevTools.Core.Framework
             catch { }
             return result;
         }
-
         public static long DevNetToolsToLong(this string s)
         {
             long result = new long();
@@ -122,7 +118,6 @@ namespace NetDevTools.Core.Framework
             catch { }
             return result;
         }
-
         public static string DevNetToolsToStringSafe(this object obj)
         {
             if (obj == null)
@@ -136,7 +131,6 @@ namespace NetDevTools.Core.Framework
 
             return resultado;
         }
-
         /// <summary>
         /// garante 2 casas decimais e remove caracteres convertendo para string
         /// </summary>
@@ -154,7 +148,6 @@ namespace NetDevTools.Core.Framework
             var resultado = obj.ToString(mascara).Replace(",", "").Replace(".", "");
             return resultado;
         }
-
         public static int DevNetToolsToInt(this string s)
         {
             if (String.IsNullOrEmpty(s))
@@ -164,7 +157,11 @@ namespace NetDevTools.Core.Framework
             int.TryParse(s, out valorRetornar);
             return valorRetornar;
         }
-
+        public static bool DevNetToolsEhDateTime(this string s)
+        {
+            DateTime temp;
+            return DateTime.TryParse(s, out temp);
+        }
         public static int? DevNetToolsToNullableInt(this string s)
         {
             if (String.IsNullOrEmpty(s))
@@ -174,7 +171,6 @@ namespace NetDevTools.Core.Framework
             int.TryParse(s, out valorretornar);
             return valorretornar;
         }
-
         public static long? DevNetToolsToNullableLong(this string s)
         {
             if (String.IsNullOrEmpty(s))
@@ -184,7 +180,6 @@ namespace NetDevTools.Core.Framework
             long.TryParse(s, out valorretornar);
             return valorretornar;
         }
-
         public static decimal DevNetToolsToDecimal(this string s)
         {
             decimal result = new decimal();
@@ -200,14 +195,12 @@ namespace NetDevTools.Core.Framework
             catch { }
             return result;
         }
-
         public static decimal DevNetToolsToDecimal(this decimal? s)
         {
             if (s.HasValue) return s.Value;
 
             return decimal.Zero;
         }
-
         public static double DevNetToolsToDouble(this string s)
         {
             double result = new double();
@@ -223,7 +216,6 @@ namespace NetDevTools.Core.Framework
             catch { }
             return result;
         }
-
         public static DateTime DevNetToolsToDateTime(this string s)
         {
             DateTime result = new DateTime();
@@ -243,7 +235,6 @@ namespace NetDevTools.Core.Framework
             catch { }
             return result;
         }
-
         public static bool DevNetToolsToBool(this string s)
         {
             if (s == null)
@@ -257,7 +248,6 @@ namespace NetDevTools.Core.Framework
 
             return false;
         }
-
         public static bool? DevNetToolsToBoolNullable(this string s)
         {
             if (String.IsNullOrEmpty(s))
@@ -265,7 +255,6 @@ namespace NetDevTools.Core.Framework
 
             return s.DevNetToolsToBool();
         }
-
         public static string DevNetToolsToBoolString(this bool b)
         {
             if (b == true)
@@ -273,7 +262,6 @@ namespace NetDevTools.Core.Framework
             else
                 return "Não";
         }
-
         /// <summary>
         /// Retorna uma instância do objeto nula
         /// </summary>
@@ -286,7 +274,6 @@ namespace NetDevTools.Core.Framework
 
             return new T();
         }
-
         /// <summary>
         /// Evita que uma string seja repassada como NULA
         /// </summary>
@@ -298,7 +285,6 @@ namespace NetDevTools.Core.Framework
                 return "";
             return texto;
         }
-
         /// <summary>
         /// Retorna uma instância do objeto nula
         /// </summary>
@@ -311,7 +297,6 @@ namespace NetDevTools.Core.Framework
 
             return new List<T>();
         }
-
         /// <summary>
         /// Método de Extensão: Remove um caractere de uma string.
         /// </summary>
@@ -330,7 +315,6 @@ namespace NetDevTools.Core.Framework
 
             return stringRemover;
         }
-
         /// <summary>
         /// Método de Extensão: Retorna uma string só numericos.
         /// </summary>
@@ -342,7 +326,6 @@ namespace NetDevTools.Core.Framework
 
             return String.Join("", System.Text.RegularExpressions.Regex.Split(s, @"[^\d]"));
         }
-
         public static string DevNetToolsCopiarTextoAteCaractere(this string s, string caractereEncontrar)
         {
             var stringBase = s;
@@ -356,7 +339,6 @@ namespace NetDevTools.Core.Framework
 
             return texto;
         }
-
         /// <summary>
         /// Remove todos os caracteres encontrados na lista de caracteres
         /// </summary>
@@ -378,13 +360,11 @@ namespace NetDevTools.Core.Framework
 
             return stringVerificar;
         }
-
         public static string DevNetToolsExtrairValorDaLinha(this string conteudoLinha, int de, int ate)
         {
             int inicio = de - 1;
             return conteudoLinha.Substring(inicio, ate - inicio);
         }
-
         /// <summary>
         /// Valida se a string informada é um código GTIN válido
         /// </summary>
@@ -466,7 +446,6 @@ namespace NetDevTools.Core.Framework
                 return false;
             }
         }
-
         public static bool DevNetToolsEhDocumentoValido(this string s)
         {
             if (string.IsNullOrEmpty(s)) return true;
@@ -475,7 +454,6 @@ namespace NetDevTools.Core.Framework
 
             return s.DevNetToolsEhCpf();
         }
-
         /// <summary>
         /// Valida se o documento informado é um CPF valido
         /// </summary>
@@ -516,7 +494,6 @@ namespace NetDevTools.Core.Framework
             digito = digito + resto.ToString();
             return s.EndsWith(digito);
         }
-
         /// <summary>
         /// Valida se o documento informado é um CNPJ valido
         /// </summary>
@@ -559,7 +536,6 @@ namespace NetDevTools.Core.Framework
             digito = digito + resto.ToString();
             return s.EndsWith(digito);
         }
-
         /// <summary>
         /// Retorna o valor do elemento informado, se não existir catch
         /// </summary>
@@ -570,7 +546,6 @@ namespace NetDevTools.Core.Framework
         {
             return xml.Descendants().Where(x => x.Name.LocalName == element).First().Value;
         }
-
         /// <summary>
         /// Retorna o valor do atributo informado, se não existir catch
         /// </summary>
@@ -581,36 +556,52 @@ namespace NetDevTools.Core.Framework
         {
             return xml.Descendants().Where(x => x.Attribute("Id") != null).FirstOrDefault().Attribute("Id").Value;
         }
-
         public static string DevNetToolsQueryString<T>(this T obj)
         {
             try
             {
-                var properties = from p in obj.GetType().GetProperties()
-                                 where p.GetValue(obj, null) != null
-                                 select p.Name + "=" + HttpUtility.UrlEncode(p.GetValue(obj, null).ToString());
+                var str = new StringBuilder();
 
-                return String.Join("&", properties.ToArray());
+                foreach (var propertie in obj.GetType().GetProperties().Where(x => x.GetValue(obj, null) != null))
+                {
+                    if (propertie.PropertyType.Namespace == "System.Collections.Generic")
+                    {
+                        foreach (var value in (IList)propertie.GetValue(obj, null))
+                        {
+                            str.Append($"&{propertie.Name}={HttpUtility.UrlEncode(value.ToString())}");
+                        }
+                    }
+                    else
+                    {
+                        if (propertie.GetValue(obj, null).ToString().DevNetToolsEhDateTime())
+                        {
+                            str.Append($"&{propertie.Name}={HttpUtility.UrlEncode(propertie.GetValue(obj, null).ToString().DevNetToolsToDateTime().ToString("yyyy-MM-dd HH:mm:ss"))}");
+                        }
+                        else
+                        {
+                            str.Append($"&{propertie.Name}={HttpUtility.UrlEncode(propertie.GetValue(obj, null).ToString())}");
+                        }
+                    }
+                }
+
+                return str.ToString();
             }
             catch
             {
                 return null;
             }
         }
-
         public static decimal DevNetToolsArredondar(this decimal valor, int casasDecimais)
         {
             var valorNovo = decimal.Round(valor, casasDecimais, MidpointRounding.AwayFromZero);
             var valorNovoStr = valorNovo.ToString("F" + casasDecimais, CultureInfo.CurrentCulture);
             return decimal.Parse(valorNovoStr);
         }
-
         public static decimal? DevNetToolsArredondar(this decimal? valor, int casasDecimais)
         {
             if (valor == null) return null;
             return DevNetToolsArredondar(valor.Value, casasDecimais);
         }
-
         public static decimal DevNetToolsArredondarParaBaixo(this decimal valor, int casasDecimais)
         {
             var divisor = (decimal)Math.Pow(10, casasDecimais);
