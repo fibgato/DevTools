@@ -18,7 +18,10 @@ namespace NetDevTools.WebAPI.Core.User
         {
             return EstaAutenticado() ? Guid.Parse(_accessor.HttpContext.User.GetUserId()) : Guid.Empty;
         }
-
+        public Guid ObterContratoId()
+        {
+            return EstaAutenticado() ? Guid.Parse(_accessor.HttpContext.User.GetContratoId()) : Guid.Empty;
+        }
         public bool EstaAutenticado()
         {
             try

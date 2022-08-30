@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "NetDevTools.WebAPI.Core/6.0.3": {
+      "NetDevTools.WebAPI.Core/6.0.4": {
         "dependencies": {
           "NetDevPack.Security.JwtExtensions": "6.0.2",
           "NetDevTools.Core": "6.0.3",
@@ -275,7 +275,7 @@
     }
   },
   "libraries": {
-    "NetDevTools.WebAPI.Core/6.0.3": {
+    "NetDevTools.WebAPI.Core/6.0.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

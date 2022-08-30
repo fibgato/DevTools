@@ -7,6 +7,7 @@ namespace NetDevTools.WebAPI.Core.User
     {
         string Name { get; }
         Guid ObterUserId();
+        Guid ObterContratoId();
         string ObterUserEmail();
         string ObterUserSaudacao();
         string ObterUserToken();
