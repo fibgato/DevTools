@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>NetDevTools.Core</id>
-    <version>6.0.13</version>
+    <version>6.0.14</version>
     <authors>Filipe Gato</authors>
     <description>Pacote de utilidades para .NET</description>
     <dependencies>

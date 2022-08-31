@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\NetDevTools.Core.csproj": {
-      "version": "6.0.13",
+      "version": "6.0.14",
       "restore": {
         "projectUniqueName": "C:\\Desenvolvimento\\GitHub\\DevTools\\DevTools\\src\\building blocks\\NetDevTools.Core\\NetDevTools.Core.csproj",
         "projectName": "NetDevTools.Core",
@@ -54,6 +54,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.4, )"
+            },
+            "Microsoft.Extensions.Caching.Redis": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [
